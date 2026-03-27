@@ -2,6 +2,9 @@
 
 I am currently in second sem and started learning c++ and started my dsa journey.
 
--Language : C++
+Language : C++
 
--Following: Strivers A2Z dsa course
+Following: Strivers A2Z dsa course
+
+University: JC bose UST, YMCA, Faridabad
+
