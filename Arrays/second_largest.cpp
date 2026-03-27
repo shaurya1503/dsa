@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//Brute force- Time complexity = O(2N)
 int second_largest(int arr[], int n){
     int max = arr[0];
     int secondlargest=INT_MIN;
@@ -15,6 +16,19 @@ int second_largest(int arr[], int n){
     
     return secondlargest;
 }
+//Optimal solution - Time complexity=O(N)
+int second_largest2(int arr[],int n){
+    int max=arr[0];
+    int secondlargest;
+     for(int i=0;i<n;i++){
+        if(max<arr[i]  ){
+            secondlargest=max;
+         max=arr[i];
+        }
+        else if(max=arr[i]){};
+    }
+    return secondlargest;
+}
 int main(){
     int n;
     cout<<"Enter the size of the array: ";
@@ -24,5 +38,7 @@ int main(){
         cout<<"Enter Element "<<i<<endl;
         cin>>arr[i];
     }
-    cout<<"Second largest digit in the array is : "<< second_largest(arr,n);
+    cout<<"Second largest digit in the array is : "<< second_largest(arr,n)<<endl;
+    cout<<"Second largest digit in the array is : "<< second_largest2(arr,n);
+    return 0;
 }
