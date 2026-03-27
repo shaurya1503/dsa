@@ -1,2 +1,8 @@
 *.exe
 *.exe
+*.exe
+*.exe
+*.out
+*.class
+*build/
+*bin/
