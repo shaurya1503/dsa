@@ -11,3 +11,7 @@ Approaches:
 3.Sum Formula(Optimal solution)
    Time:O(n)
    Space:O(1)
+
+4.XOR approach(Best approach because there is no overflow)
+   Time:O(n)
+   Space:O(1)
