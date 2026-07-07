@@ -35,7 +35,7 @@ void qs(vector<int>& arr, int low,int high){
     }
 }
 int main(){
-    vector <int> arr ={1,0,2,1,0};
+    vector <int> arr ={1,0,2,1,0} ;
         
     
     qs(arr,0,arr.size()-1);
