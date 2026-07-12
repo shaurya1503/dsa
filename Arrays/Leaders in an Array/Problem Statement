@@ -1,0 +1,9 @@
+Problem Statement: Leader element are the element which have no element greater than them in their right side in an array
+Example 1:
+Input:
+ arr = [4, 7, 1, 0]  
+Output:
+ 7 1 0  
+Explanation:
+The rightmost element (0) is always a leader.  
+7 and 1 are greater than the elements to their right, making them leaders as well.
