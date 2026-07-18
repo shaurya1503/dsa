@@ -23,3 +23,5 @@ int main(){
     cout<<countSubarray(Array,3);
     return 0;
 }
+//Time Complexity: O(N3), where N = size of the array.We are using three nested loops here. Though all are not running for exactly N times, the time complexity will be approximately O(N3).
+//Space Complexity: O(1) as we are not using any extra space.
