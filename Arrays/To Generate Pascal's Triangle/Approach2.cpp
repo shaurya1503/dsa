@@ -4,8 +4,8 @@ using namespace std;
 int main(){
     int row=4,column=2;
     int ans=1;
-    cout<<ans;
-    for(int i=0;i<=row;i++){
+    cout<<ans<<" ";
+    for(int i=1;i<row;i++){
         ans=ans*(row-i)/i;
         cout<<ans<<" ";
     }
