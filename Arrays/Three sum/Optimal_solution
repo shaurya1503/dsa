@@ -1,0 +1,44 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<set>
+using namespace std;
+vector<vector<int>> threesome(vector<int> arr){
+    int n=arr.size();
+    sort(arr.begin(),arr.end());
+    set<vector<int>>st;
+    for(int i =0;i<n;i++){
+        int left=i+1,right=n-1;
+        
+        while(left<right){
+            int c=arr[i]+arr[left]+arr[right];
+            if(c==0){
+                vector<int> temp={arr[i],arr[left],arr[right]};
+                st.insert(temp);
+                left++,right--;
+            }
+            if(c>0){
+                right--;
+            }
+            if(c<0){
+                left++;
+            }
+        }
+    }
+    vector<vector<int>> solution(st.begin(),st.end());
+    return solution;
+}
+int main(){
+    vector<int> arr={-1,0,1,2,-1,4};
+    vector<vector<int>> solution = threesome(arr);
+    for(auto x : solution){
+        cout<<"{";
+        for(auto y : x){
+            cout<<y<<" ";
+        }
+        cout<<"}";
+    }
+}
+//Time Complexity: O(NlogN)+O(N2), as The pointer i, is running for approximately N times. And both the pointers j and k combined can run for approximately N times including the operation of skipping duplicates. So the total time complexity will be O(N2). 
+
+//Space Complexity: O(no. of quadruplets), This space is only used to store the answer. We are not using any extra space to solve this problem. So, from that perspective, space complexity can be written as O(1).
