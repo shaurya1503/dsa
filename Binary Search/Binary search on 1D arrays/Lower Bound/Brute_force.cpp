@@ -1,4 +1,4 @@
-//As for brute force approach we could simply apply linear search and return the inddex as soon as arr[index]>=target.
+//As for brute force approach we could simply apply linear search and return the index as soon as arr[index]>=target.
 #include<iostream>
 #include<vector>
 using namespace std;
