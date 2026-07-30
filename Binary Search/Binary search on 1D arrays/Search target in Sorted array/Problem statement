@@ -1,0 +1,4 @@
+Problem statement: You are given a sorted array of integers and a target, your task is to search for the target in the given array. Assume the given array does not contain any duplicate numbers.
+Example:
+Input: [2,3,4,5,6,7] target=5
+Output: 3
