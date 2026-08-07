@@ -1,0 +1,5 @@
+Problem Statement: You are given a positive integer n. Your task is to find and return its square root. If ‘n’ is not a perfect square, then return the floor value of sqrt(n).
+Example:
+Input: n=35
+Output: 5
+Explaination: Square root of 35 is approximately 5.91. So, the floor value will be 5. 
