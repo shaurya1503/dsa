@@ -7,7 +7,7 @@ bool canplace(vector<int> arr,int cows,int distance){
     int last=arr[0];
     for(int i=1;i<arr.size();i++){
         if(arr[i]-last>=distance){
-            cntcows++;
+            cntcows++; 
             last=arr[i];
         }
         if(cntcows>=cows) return true;
