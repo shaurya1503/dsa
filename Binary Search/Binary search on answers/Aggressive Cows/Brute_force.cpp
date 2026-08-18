@@ -5,7 +5,7 @@ using namespace std;
 bool canplace(vector<int> arr,int cows,int distance){
     int cntcows=1;
     int last=arr[0];
-    for(int i=1;i<arr.size();i++){
+    for(int i=1;i<arr.size();i++){ 
         if(arr[i]-last>=distance){
             cntcows++;
             last=arr[i];
